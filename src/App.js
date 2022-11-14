@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+
+//import Data from './Mock-data.json';
 import './App.css';
+import Articles from "./Components/Article";
 
 function App() {
+
+  const Data = require('./Mock-data.json');
+  //console.log(Data.Articles);
+
+  
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+    <Articles Name = "Anurag" Article="12341234" Email="something" Content="somethig somethigng"  />
+    <Articles Name = "Panwar" Article="12341234" Email="something 2222" Content="somethig somethigng222"  />
+    <Articles Name = "bleh" Article="12341234" Email="something 333" Content="somethig somethigng 33"  />
+    
+
+    </>
+    
   );
 }
 
